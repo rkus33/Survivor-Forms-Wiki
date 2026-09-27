@@ -1,0 +1,67 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Survivor Forms Wiki</title><link rel="stylesheet" href="styles.css"></head><body>
+
+<header><div class="header-inner">
+<a href="index.html"><img class="logo" src="assets/pack.png" alt="Survivor Forms pack icon"></a>
+<div><div class="brand">Survivor Forms Wiki</div><div class="version">Pack 1.10</div></div>
+<nav><a href="index.html">Home</a><a href="pokemon/infernal-archen.html">Infernal Archen</a><a href="pokemon/abyssal-sharpedo.html">Abyssal Sharpedo</a><a href="pokemon/sabre-luxray.html">Sabre Luxray</a><a href="pokemon/blight-breloom.html">Blight Breloom</a><a href="pokemon/frostweb-galvantula.html">Frostweb Galvantula</a><a href="pokemon/dunestalker-heliolisk.html">Dunestalker Heliolisk</a></nav>
+</div></header>
+<main>
+<section class="hero">
+<div><div class="kicker">Cobblemon Add-on • Version 1.10</div>
+<h1>Survivor Forms</h1>
+<p>A reference wiki for the six custom Survivor Form Pokémon in the pack. Each entry lists the form's typing, base stats, ability, natural spawn rules, learnset, shiny texture, and signature move.</p></div>
+<img class="hero-logo" src="assets/pack.png" alt="Survivor Forms pack icon">
+</section>
+<input class="search" id="search" placeholder="Search Pokémon or type…" aria-label="Search Pokémon">
+<div class="grid" id="cards">
+<a class="card mon-card" href="pokemon/infernal-archen.html" data-name="infernal archen fire rock">
+<div class="kicker">Infernal Form</div>
+<h2>Infernal Archen</h2>
+<div class="types"><span class="type" style="background:#E76F51">Fire</span><span class="type" style="background:#9C8B57">Rock</span></div>
+<p><strong>Rekindle</strong><br>
+BST 567 • Signature: Last Ember</p>
+</a>
+<a class="card mon-card" href="pokemon/abyssal-sharpedo.html" data-name="abyssal sharpedo water ghost">
+<div class="kicker">Abyssal Form</div>
+<h2>Abyssal Sharpedo</h2>
+<div class="types"><span class="type" style="background:#3A86FF">Water</span><span class="type" style="background:#7259A3">Ghost</span></div>
+<p><strong>Bottom Feeder</strong><br>
+BST 480 • Signature: Gravejaw</p>
+</a>
+<a class="card mon-card" href="pokemon/sabre-luxray.html" data-name="sabre luxray ground dark">
+<div class="kicker">Sabre Form</div>
+<h2>Sabre Luxray</h2>
+<div class="types"><span class="type" style="background:#B08968">Ground</span><span class="type" style="background:#4A4654">Dark</span></div>
+<p><strong>Big Game Hunter</strong><br>
+BST 523 • Signature: Sabre Rend</p>
+</a>
+<a class="card mon-card" href="pokemon/blight-breloom.html" data-name="blight breloom fighting poison">
+<div class="kicker">Blight Form</div>
+<h2>Blight Breloom</h2>
+<div class="types"><span class="type" style="background:#C44536">Fighting</span><span class="type" style="background:#8E5AAE">Poison</span></div>
+<p><strong>Rot Feeder</strong><br>
+BST 510 • Signature: Rot Punch</p>
+</a>
+<a class="card mon-card" href="pokemon/frostweb-galvantula.html" data-name="frostweb galvantula bug ice">
+<div class="kicker">Frostweb Form</div>
+<h2>Frostweb Galvantula</h2>
+<div class="types"><span class="type" style="background:#74A942">Bug</span><span class="type" style="background:#67C7D4">Ice</span></div>
+<p><strong>Insulating Fur</strong><br>
+BST 523 • Signature: Rime Snare</p>
+</a>
+<a class="card mon-card" href="pokemon/dunestalker-heliolisk.html" data-name="dunestalker heliolisk electric dragon">
+<div class="kicker">Dunestalker Form</div>
+<h2>Dunestalker Heliolisk</h2>
+<div class="types"><span class="type" style="background:#E6B800">Electric</span><span class="type" style="background:#6B5BD2">Dragon</span></div>
+<p><strong>Ambush Predator</strong><br>
+BST 520 • Signature: Burrow Bolt</p>
+</a></div>
+<section class="section card"><h2>Current roster</h2>
+<p>Infernal Archen, Abyssal Sharpedo, Sabre Luxray, Blight Breloom, Frostweb Galvantula, and Dunestalker Heliolisk.</p>
+<p class="note">This wiki is based on the contents of Survivor_Forms_1.10.zip. It does not document abandoned or experimental forms as separate roster entries.</p></section>
+</main><footer>Survivor Forms Wiki • Generated from Survivor_Forms_1.10.zip</footer>
+<script>
+const q=document.getElementById('search'), cards=[...document.querySelectorAll('.mon-card')];
+q.addEventListener('input',()=>{const s=q.value.toLowerCase().trim();cards.forEach(c=>c.style.display=c.dataset.name.includes(s)?'block':'none')})
+</script></body></html>
